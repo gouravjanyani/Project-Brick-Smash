@@ -1,0 +1,70 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* justify-content:center; */
+  align-items:center;
+  flex-flow: column;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+
+.score {
+  width: 100vw;
+  height: 20vh;
+  background-color: rgba(84, 222, 228, .3);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5);
+  /* filter: blur(5px); */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid {
+  /* margin-bottom: 50px; */
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+  padding: 5% 10%;
+  height: 80vh;
+  width: 100vw;
+  position: relative;
+  background-image: url("../sprites/bg.png");
+  background-size: cover;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  /* background-color: blueviolet; */
+  background-image: url("../sprites/basic/paddle.png");
+  background-size: cover;
+}
+
+.block {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  /* background-color: blue; */
+  background-image: url("../sprites/basic/red-tile.png");
+  background-size: cover;
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  /* background-color: red; */
+  background-image: url("../sprites/basic/ball.png");
+  background-size: cover;
+}
